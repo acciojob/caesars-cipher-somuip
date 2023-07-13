@@ -35,8 +35,8 @@ function rot13(encodedStr) {
   let decodedArr = []; // Your Result goes here
 	for(let i=0;i<encodedStr.length;i++){
 		let alph = encodedStr.charAt(i);
-		let char = encodedStr.charCodeAt(alph);
-		if(char >= 65 && char <= 90){
+		
+		if(lookup.alph){
 			let shifted = lookup.alph;
 			decodedArr.push(shifted);
 		}
