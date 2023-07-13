@@ -38,10 +38,10 @@ function rot13(encodedStr) {
 		let char = encodedStr.charCodeAt(alph);
 		if(char >= 65 && char <= 90){
 			let shifted = lookup.alph;
-			decodedArr.add(shifted);
+			decodedArr.push(shifted);
 		}
 		else{
-			decodedArr.add(alph);
+			decodedArr.push(alph);
 		}
 	}
   // Only change code below this line
